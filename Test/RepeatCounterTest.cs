@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+sing System.Collections.Generic;
 using Xunit;
 using System;
 
@@ -14,4 +14,12 @@ namespace WordCounter
         string checkWord = checkNewWord.GetWord();
 
         Assert.Equal(word, checkWord);
+
+        // Test2_RepeatCounterGetThe_true()
+      //
+
+
+
       }
+  }
+}
