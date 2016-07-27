@@ -19,3 +19,43 @@ namespace WordCounterC
     {
       return _word;
     }
+
+
+    public void SetWord(string word)
+    {
+      _word = word;
+    }
+
+    public string GetSentence()
+    {
+      return _sentence;
+    }
+
+    public void SetSentence(string sentence)
+    {
+      _sentence = sentence;
+    }
+
+    public int CountRepeats()
+    {
+      string[] splitSentence = this._sentence.ToLower().Split(' ');
+      string newWord = this._word.Trim().ToLower();
+      if (this._word == "")
+      {
+        return 0;
+      }
+
+      int count = 0;
+      foreach (string word in splitSentence)
+      {
+        if (word == newWord)
+      {
+        count++;
+      }
+
+      }
+        return count;
+
+      }
+    }
+  }
